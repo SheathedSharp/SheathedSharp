@@ -8,9 +8,13 @@ on:
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write    # Add permissions to write to repository
     
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's auto-generated token
     
     - name: Set up Python
       uses: actions/setup-python@v2
