@@ -2,7 +2,7 @@
  * @Author: hiddenSharp429 z404878860@163.com
  * @Date: 2024-11-08 20:19:18
  * @LastEditors: hiddenSharp429 z404878860@163.com
- * @LastEditTime: 2024-11-08 21:26:01
+ * @LastEditTime: 2024-11-09 11:03:54
 -->
 <!-- Greeting -->
 # Hey there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">:smiley:
@@ -11,7 +11,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2D9EF1&center=true&vCenter=true&random=false&width=500&lines=Full-Stack++%7C+Mobile+App++%7C+ML+Developer;" alt="Typing SVG" />
 </p>
 <!--Introduction -->
-I'm hiddenSharp429! I'm a **Full-Stack Developer**:computer:, **Mobile App Developer**:iphone:, and **Machine Learning Enthusiast**:brain:, looking to solve **real-world problems**:earth_asia:. I'm passionate about creating software and tools to help people, exploring the frontiers of AI, and **building a community**. Do :star2: my repository if you find my project interesting, at least your star could make someone's day :pray:.
+I'm hiddenSharp429! I'm a **Full-Stack Developer** :computer:, **Mobile App Developer** :iphone:, and **Machine Learning Enthusiast** :brain:, looking to solve **real-world problems**:earth_asia:. I'm passionate about creating software and tools to help people, exploring the frontiers of AI, and **building a community**. Do :star2: my repository if you find my project interesting, at least your star could make someone's day :pray:.
 <br>
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :blush:</em>
 
