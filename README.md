@@ -2,7 +2,7 @@
  * @Author: hiddenSharp429 z404878860@163.com
  * @Date: 2024-11-08 20:19:18
  * @LastEditors: hiddenSharp429 z404878860@163.com
- * @LastEditTime: 2024-11-09 11:06:53
+ * @LastEditTime: 2024-11-09 13:07:53
 -->
 <!-- Greeting -->
 # Hey there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">:smiley:
@@ -10,17 +10,29 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2D9EF1&center=true&vCenter=true&random=false&width=500&lines=Full-Stack++%7C+Mobile+App++%7C+ML+Developer;" alt="Typing SVG" />
 </p>
+
 <!--Introduction -->
 I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App Developer</b> :iphone:, and <b>Machine Learning Enthusiast</b> :brain:, looking to solve <b>real-world problems</b> :earth_asia:. I'm passionate about creating software and tools to help people, exploring the frontiers of AI, and <b>building a community</b>. Do :star2: my repository if you find my project interesting, at least your star could make someone's day :pray:.
 <br>
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :blush:</em>
 
-<!-- Your badges -->
-[![CSDN](https://img.shields.io/badge/-My%20Blog-red?style=flat&logo=CSDN&logoColor=white)](https://blog.csdn.net/Zchengjisihan?spm=1019.2139.3001.5343) [![GitHub](https://img.shields.io/badge/-hiddenSharp429-black?style=flat&logo=GitHub&logoColor=white)](https://github.com/hiddenSharp429)
-
-<!-- Profile View Count -->
+<!-- CSDN Profile View Count -->
 
 <p>
+  <a href="https://blog.csdn.net/Zchengjisihan?spm=1019.2139.3001.5343"><img src="https://img.shields.io/badge/My%20Chinese%20Blog-Click-red?style=social&logo=CSDN"></img>
+  </a>
+  <img src="https://img.shields.io/badge/My%20Blog%20Views-<!--CSDN_VIEWS-->-blue?style=social">
+  </img>
+  <img src="https://img.shields.io/badge/Posts-<!--CSDN_POSTS-->-green?style=social">
+  </img>
+  <img src="https://img.shields.io/badge/Followers-<!--CSDN_FOLLOWERS-->-orange?style=social">
+  </img>
+</p>
+
+<!-- Github Profile View Count -->
+
+<p>
+  <img src="https://img.shields.io/badge/-hiddenSharp429-black?style=flat&logo=GitHub&logoColor=white">
   <img src="http://views.whatilearened.today/views/github/hiddenSharp429/views.svg"/>
   <a href="https://hiddensharp429.github.io/My-WEB-Site"><img src="https://img.shields.io/website?label=Website%20status%20%3A&url=https%3A%2F%2Fdaniels-roth-stan.fr%2F"/></a>
   <a href="https://github.com/hiddenSharp429/"><img src="https://img.shields.io/github/followers/hiddenSharp429?color=%234CC61E&label=GitHub%20Followers%20%3A"/></a>
