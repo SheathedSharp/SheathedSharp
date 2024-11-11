@@ -2,7 +2,7 @@
 Author: hiddenSharp429 z404878860@163.com
 Date: 2024-11-09 13:13:34
 LastEditors: hiddenSharp429 z404878860@163.com
-LastEditTime: 2024-11-11 11:05:42
+LastEditTime: 2024-11-11 11:50:23
 '''
 import os
 import re
@@ -51,17 +51,25 @@ def update_readme(stats):
     with open('README.md', 'r', encoding='utf-8') as file:
         content = file.read()
     
-    # 定义替换模式：分组捕获前缀和数字
-    patterns = {
-        'views': r'(My%20Blog%20Views-)(\d+)',
-        'posts': r'(Posts-)(\d+)',
-        'followers': r'(Followers-)(\d+)'
+    # 定义替换模式和对应的完整URL格式
+    replacements = {
+        'views': (
+            r'badge/My%20Blog%20Views-\d+-blue\?style=social',
+            f'badge/My%20Blog%20Views-{stats["views"]}-blue?style=social'
+        ),
+        'posts': (
+            r'badge/Posts-\d+-green\?style=social',
+            f'badge/Posts-{stats["posts"]}-green?style=social'
+        ),
+        'followers': (
+            r'badge/Followers-\d+-orange\?style=social',
+            f'badge/Followers-{stats["followers"]}-orange?style=social'
+        )
     }
     
-    # 执行替换，保留前缀(\1)，替换数字为新值
-    for key, pattern in patterns.items():
-        new_value = f"\\1{stats[key]}"
-        content = re.sub(pattern, new_value, content)
+    # 执行替换
+    for key, (pattern, replacement) in replacements.items():
+        content = re.sub(pattern, replacement, content)
     
     with open('README.md', 'w', encoding='utf-8') as file:
         file.write(content)
