@@ -2,7 +2,7 @@
 Author: hiddenSharp429 z404878860@163.com
 Date: 2024-11-09 13:13:34
 LastEditors: hiddenSharp429 z404878860@163.com
-LastEditTime: 2024-11-11 10:36:13
+LastEditTime: 2024-11-11 10:46:24
 '''
 import os
 import re
@@ -53,9 +53,9 @@ def update_readme(stats):
     
     # 定义替换模式：同时匹配占位符和数字
     patterns = {
-        'views': r'(<!--CSDN_VIEWS-->|\d+(?:,\d+)*)\b',
-        'posts': r'(<!--CSDN_POSTS-->|\d+(?:,\d+)*)\b',
-        'followers': r'(<!--CSDN_FOLLOWERS-->|\d+(?:,\d+)*)\b'
+        'views': r'(<!--CSDN_VIEWS-->|(My%20Blog%20Views-)(\d+(?:,\d+)*)',
+        'posts': r'(<!--CSDN_POSTS-->|(Posts-)(\d+(?:,\d+)*)',
+        'followers': r'(<!--CSDN_FOLLOWERS-->|(Followers-)(\d+(?:,\d+)*)'
     }
     
     # 执行替换
