@@ -2,7 +2,7 @@
 Author: hiddenSharp429 z404878860@163.com
 Date: 2024-11-09 13:13:34
 LastEditors: hiddenSharp429 z404878860@163.com
-LastEditTime: 2024-11-11 10:55:25
+LastEditTime: 2024-11-11 11:05:42
 '''
 import os
 import re
@@ -51,16 +51,17 @@ def update_readme(stats):
     with open('README.md', 'r', encoding='utf-8') as file:
         content = file.read()
     
-    # 定义替换模式：同时匹配占位符和数字
+    # 定义替换模式：分组捕获前缀和数字
     patterns = {
-        'views': r'My%20Blog%20Views-\d+',
-        'posts': r'Posts-\d+',
-        'followers': r'Followers-\d+'
+        'views': r'(My%20Blog%20Views-)(\d+)',
+        'posts': r'(Posts-)(\d+)',
+        'followers': r'(Followers-)(\d+)'
     }
     
-    # 执行替换
+    # 执行替换，保留前缀(\1)，替换数字为新值
     for key, pattern in patterns.items():
-        content = re.sub(pattern, str(stats[key]), content)
+        new_value = f"\\1{stats[key]}"
+        content = re.sub(pattern, new_value, content)
     
     with open('README.md', 'w', encoding='utf-8') as file:
         file.write(content)
