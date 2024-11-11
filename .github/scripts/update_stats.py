@@ -2,7 +2,7 @@
 Author: hiddenSharp429 z404878860@163.com
 Date: 2024-11-09 13:13:34
 LastEditors: hiddenSharp429 z404878860@163.com
-LastEditTime: 2024-11-09 13:16:19
+LastEditTime: 2024-11-11 10:36:13
 '''
 import os
 import re
@@ -50,15 +50,25 @@ def get_csdn_stats(url):
 def update_readme(stats):
     with open('README.md', 'r', encoding='utf-8') as file:
         content = file.read()
-
-    content = re.sub(r'<!--CSDN_VIEWS-->', str(stats['views']), content)
-    content = re.sub(r'<!--CSDN_POSTS-->', str(stats['posts']), content)
-    content = re.sub(r'<!--CSDN_FOLLOWERS-->', str(stats['followers']), content)
-
+    
+    # 定义替换模式：同时匹配占位符和数字
+    patterns = {
+        'views': r'(<!--CSDN_VIEWS-->|\d+(?:,\d+)*)\b',
+        'posts': r'(<!--CSDN_POSTS-->|\d+(?:,\d+)*)\b',
+        'followers': r'(<!--CSDN_FOLLOWERS-->|\d+(?:,\d+)*)\b'
+    }
+    
+    # 执行替换
+    for key, pattern in patterns.items():
+        content = re.sub(pattern, str(stats[key]), content)
+    
     with open('README.md', 'w', encoding='utf-8') as file:
         file.write(content)
 
 if __name__ == "__main__":
     url = 'https://blog.csdn.net/Zchengjisihan'
     stats = get_csdn_stats(url)
+    print(f"访问量: {stats['views']}")
+    print(f"文章数: {stats['posts']}")
+    print(f"粉丝数: {stats['followers']}")
     update_readme(stats)
