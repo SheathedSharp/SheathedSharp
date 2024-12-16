@@ -21,11 +21,11 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
 <p>
   <a href="https://blog.csdn.net/Zchengjisihan?spm=1019.2139.3001.5343"><img src="https://img.shields.io/badge/My%20Chinese%20Blog-Click-red?style=social&logo=CSDN"></img>
   </a>
-  <img src="https://img.shields.io/badge/My%20Blog%20Views-520477-blue?style=social">
+  <img src="https://img.shields.io/badge/My%20Blog%20Views-0-blue?style=social">
   </img>
-  <img src="https://img.shields.io/badge/Posts-121-green?style=social">
+  <img src="https://img.shields.io/badge/Posts-0-green?style=social">
   </img>
-  <img src="https://img.shields.io/badge/Followers-4948-orange?style=social">
+  <img src="https://img.shields.io/badge/Followers-0-orange?style=social">
   </img>
 </p>
 
