@@ -19,30 +19,45 @@ def get_csdn_stats(url):
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
+    # 添加用户代理
+    chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
     
     try:
         driver = webdriver.Chrome(options=chrome_options)
+        # 设置页面加载超时时间
+        driver.set_page_load_timeout(30)
         driver.get(url)
-        time.sleep(5)
+        
+        # 增加等待时间
+        time.sleep(15)
 
         stats = {}
+        # 更新选择器以适应可能的页面结构变化
         selectors = {
-            'views': "//span[contains(@class, 'user-profile-statistics-views')]//div[contains(@class, 'user-profile-statistics-num')]",
+            'views': "//div[contains(@class, 'user-profile-statistics-num')]",
             'posts': "//div[contains(@class, 'user-profile-statistics-num')][following-sibling::div[contains(text(), '原创')]]",
             'followers': "//div[contains(@class, 'user-profile-statistics-num')][following-sibling::div[contains(text(), '粉丝')]]"
         }
 
         for key, selector in selectors.items():
             try:
-                element = WebDriverWait(driver, 10).until(
+                # 增加等待时间和重试逻辑
+                element = WebDriverWait(driver, 20).until(
                     EC.presence_of_element_located((By.XPATH, selector))
                 )
+                # 添加JavaScript执行来确保元素可见
+                driver.execute_script("arguments[0].scrollIntoView(true);", element)
+                time.sleep(2)
                 stats[key] = int(element.text.replace(',', ''))
-            except Exception:
+            except Exception as e:
+                print(f"Error retrieving {key}: {e}")
                 stats[key] = 0
 
         return stats
 
+    except Exception as e:
+        print(f"Major error: {e}")
+        return {'views': 0, 'posts': 0, 'followers': 0}
     finally:
         if 'driver' in locals():
             driver.quit()
