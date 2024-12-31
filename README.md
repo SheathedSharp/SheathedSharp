@@ -1,8 +1,6 @@
 <!--
  * @Author: hiddenSharp429 z404878860@163.com
  * @Date: 2024-11-08 20:19:18
- * @LastEditors: hiddenSharp429 z404878860@163.com
- * @LastEditTime: 2024-11-09 13:07:53
 -->
 <!-- Greeting -->
 # Hey there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">:smiley:
@@ -23,7 +21,7 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
   </a>
   <img src="https://img.shields.io/badge/My%20Blog%20Views-527328-blue?style=social">
   </img>
-  <img src="https://img.shields.io/badge/Posts-0-green?style=social">
+  <img src="https://img.shields.io/badge/Posts-121-green?style=social">
   </img>
   <img src="https://img.shields.io/badge/Followers-5083-orange?style=social">
   </img>
