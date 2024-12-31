@@ -23,7 +23,7 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
   </a>
   <img src="https://img.shields.io/badge/My%20Blog%20Views-527328-blue?style=social">
   </img>
-  <img src="https://img.shields.io/badge/Posts-121-green?style=social">
+  <img src="https://img.shields.io/badge/Posts-0-green?style=social">
   </img>
   <img src="https://img.shields.io/badge/Followers-5083-orange?style=social">
   </img>
