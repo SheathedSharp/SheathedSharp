@@ -34,6 +34,7 @@ jobs:
     
     - name: Update stats
       run: |
+        export NODE_OPTIONS="--max-old-space-size=4096"
         python .github/scripts/update_stats.py
       continue-on-error: true
     

@@ -2,7 +2,7 @@
 Author: hiddenSharp429 z404878860@163.com
 Date: 2024-11-09 13:13:34
 LastEditors: Please set LastEditors
-LastEditTime: 2025-01-07 10:51:21
+LastEditTime: 2025-01-07 11:00:11
 '''
 import os
 import re
@@ -19,28 +19,32 @@ def get_csdn_stats(url):
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    # 添加更多必要的 Chrome 参数
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--window-size=1920,1080')
-    chrome_options.add_argument('--start-maximized')
+    chrome_options.add_argument('--disable-extensions')
+    chrome_options.add_argument('--disable-infobars')
+    chrome_options.add_argument('--disable-notifications')
     chrome_options.add_argument('--ignore-certificate-errors')
     chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+    chrome_options.page_load_strategy = 'eager'  # 使用急切加载策略
     
-    max_retries = 3
+    max_retries = 5  # 增加重试次数
     for attempt in range(max_retries):
         try:
             driver = webdriver.Chrome(options=chrome_options)
-            driver.set_page_load_timeout(30)
+            driver.set_page_load_timeout(60)  # 增加超时时间
             
-            # 打印当前页面信息以便调试
             print(f"Attempt {attempt + 1}: Accessing {url}")
+            
+            # 先访问一个简单的页面
+            driver.get("https://www.csdn.net")
+            time.sleep(5)
+            
+            # 然后再访问目标页面
             driver.get(url)
             
-            # 等待页面加载完成
-            time.sleep(20)  # 增加等待时间
-            
-            # 打印页面源代码，用于调试
-            print("Page source length:", len(driver.page_source))
+            # 使用显式等待替代 sleep
+            wait = WebDriverWait(driver, 30)
             
             stats = {}
             selectors = {
@@ -49,38 +53,55 @@ def get_csdn_stats(url):
                 'followers': "//div[contains(@class, 'user-profile-statistics-num')][following-sibling::div[contains(text(), '粉丝')]]"
             }
 
+            # 等待任意一个元素出现
+            first_element = wait.until(
+                EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'user-profile-statistics-num')]"))
+            )
+
+            # 确保页面完全加载
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+            driver.execute_script("window.scrollTo(0, 0);")
+            
             for key, selector in selectors.items():
                 try:
-                    # 使用显式等待
-                    wait = WebDriverWait(driver, 20)
                     element = wait.until(EC.presence_of_element_located((By.XPATH, selector)))
-                    
-                    # 尝试多种方法获取元素文本
-                    text = element.text or element.get_attribute('textContent')
+                    # 尝试多种方法获取文本
+                    text = element.text
                     if not text:
-                        driver.execute_script("arguments[0].scrollIntoView(true);", element)
-                        time.sleep(2)
-                        text = element.text or element.get_attribute('textContent')
+                        text = driver.execute_script("return arguments[0].textContent;", element)
+                    if not text:
+                        text = element.get_attribute('textContent')
                     
-                    print(f"Found {key}: {text}")  # 调试信息
-                    stats[key] = int(text.replace(',', ''))
+                    print(f"Raw {key} text: '{text}'")  # 调试信息
+                    
+                    # 清理并转换文本
+                    cleaned_text = ''.join(filter(str.isdigit, text))
+                    stats[key] = int(cleaned_text) if cleaned_text else 0
+                    print(f"Processed {key}: {stats[key]}")  # 调试信息
+                    
                 except Exception as e:
                     print(f"Error retrieving {key}: {e}")
-                    continue
+                    stats[key] = 0
 
-            # 如果成功获取到数据，直接返回
+            # 如果至少有一个非零值，认为是成功的
             if any(stats.values()):
+                print("Successfully retrieved stats:", stats)
                 return stats
                 
         except Exception as e:
             print(f"Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
-                time.sleep(5)  # 在重试之前等待
+                time.sleep(10)  # 增加重试间隔
                 continue
         finally:
-            if 'driver' in locals():
-                driver.quit()
+            try:
+                if 'driver' in locals():
+                    driver.quit()
+            except Exception as e:
+                print(f"Error closing driver: {e}")
     
+    print("All attempts failed, returning zeros")
     return {'views': 0, 'posts': 0, 'followers': 0}
 
 def update_readme(stats):
