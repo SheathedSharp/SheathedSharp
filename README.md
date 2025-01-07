@@ -42,26 +42,6 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
 </p>
   
 
-
-<!-- Working GIF -->
-<img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="500" height="400" align="right">
-
-### 💼  Things that I'm currently working on: 
-* Diving deep into Computer Vision :eyes:
-* Exploring Pattern Recognition techniques :mag:
-* Implementing Neural Networks from scratch :brain:
-* Developing AI-powered tools to simplify workflows :wrench:
-* Creating applications that make a positive impact on daily life :sparkles:
-
-### 🌱 Challenges that I'm currently challenging myself:
-To improve my skills and knowledge, I've set a couple of self-challenges:
-
-* Learn and implement a new machine learning algorithm every week :man_technologist:
-* Contribute to open source projects :octocat:
-* Improve my understanding of software architecture and design patterns :building_construction:
-* Write technical blog posts to share knowledge :pencil:
-* Balance coding with physical activity for a healthy lifestyle :running:
-
 ### Languages and Tools: <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) 
@@ -77,12 +57,6 @@ To improve my skills and knowledge, I've set a couple of self-challenges:
 
 ### GitHub Trophies: 🏆
 ![](https://github-profile-trophy.vercel.app/?username=hiddenSharp429&theme=algolia&no-frame=false&no-bg=true&margin-w=4)
-
-### 🌟 Featured Projects
-
-* [Student Attendance System](https://github.com/hiddenSharp429/student-attendance-system-python) - A Flask-based system with WeChat Mini Program frontend
-* [STU Youth League Committee WeChat Mini Program](https://github.com/hiddenSharp429/STU-Youth-League-Committee-WeChat-Mini-Program) - WeChat Mini Program for university committee
-* [Evolutionary Algorithms in Python](https://github.com/hiddenSharp429/Evolutionary-Algorithms-Python) - Exploring nature-inspired optimization techniques
 
 <h4 align="center">Thanks for visiting! :innocent:</h4>
 
