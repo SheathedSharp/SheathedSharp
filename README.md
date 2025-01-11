@@ -1,5 +1,5 @@
 <!--
- * @Author: hiddenSharp429 z404878860@163.com
+ * @Author: SheathedSharp z404878860@163.com
  * @Date: 2024-11-08 20:19:18
 -->
 <!-- Greeting -->
@@ -10,7 +10,7 @@
 </p>
 
 <!--Introduction -->
-I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App Developer</b> :iphone:, and <b>Machine Learning Enthusiast</b> :brain:, looking to solve <b>real-world problems</b> :earth_asia:. I'm passionate about creating software and tools to help people, exploring the frontiers of AI, and <b>building a community</b>. Do :star2: my repository if you find my project interesting, at least your star could make someone's day :pray:.
+I'm SheathedSharp! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App Developer</b> :iphone:, and <b>Machine Learning Enthusiast</b> :brain:, looking to solve <b>real-world problems</b> :earth_asia:. I'm passionate about creating software and tools to help people, exploring the frontiers of AI, and <b>building a community</b>. Do :star2: my repository if you find my project interesting, at least your star could make someone's day :pray:.
 <br>
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :blush:</em>
 
@@ -30,11 +30,11 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
 <!-- Github Profile View Count -->
 
 <p>
-  <img src="https://img.shields.io/badge/-hiddenSharp429-black?style=flat&logo=GitHub&logoColor=white">
-  <img src="http://views.whatilearened.today/views/github/hiddenSharp429/views.svg"/>
-  <a href="https://hiddensharp429.github.io/My-WEB-Site"><img src="https://img.shields.io/website?label=Website%20status%20%3A&url=https%3A%2F%2Fdaniels-roth-stan.fr%2F"/></a>
-  <a href="https://github.com/hiddenSharp429/"><img src="https://img.shields.io/github/followers/hiddenSharp429?color=%234CC61E&label=GitHub%20Followers%20%3A"/></a>
-  <a href="https://github.com/hiddenSharp429?tab=repositories"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"/></a>
+  <img src="https://img.shields.io/badge/-SheathedSharp-black?style=flat&logo=GitHub&logoColor=white">
+  <img src="http://views.whatilearened.today/views/github/SheathedSharp/views.svg"/>
+  <a href="https://SheathedSharp.github.io/My-WEB-Site"><img src="https://img.shields.io/website?label=Website%20status%20%3A&url=https%3A%2F%2Fdaniels-roth-stan.fr%2F"/></a>
+  <a href="https://github.com/SheathedSharp/"><img src="https://img.shields.io/github/followers/SheathedSharp?color=%234CC61E&label=GitHub%20Followers%20%3A"/></a>
+  <a href="https://github.com/SheathedSharp?tab=repositories"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"/></a>
   <a href="mailto:z404878860@163.com?subject=[GitHub]%20🔥%20Prise%20de%20contact&body=Bonjour%20Stan%2C%0A%0AJe%20viens%20vers%20toi%20aujourd%27hui%20apr%C3%A8s%20avoir%20vu%20ton%20profil%20GitHub%20pour%20..."><img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg"/></a>
   <img src="https://img.shields.io/badge/Front End-Vue/React-42b883"/>
   <img src="https://img.shields.io/badge/Back End-Express/Flask/Spring Boot-f5117"/>
@@ -49,15 +49,15 @@ I'm hiddenSharp429! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App 
 ### GitHub Stats: 📊 
 <div align="center">
   <p align="center" style="display: flex; justify-content: space-between;">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=hiddenSharp429&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hiddenSharp429&theme=transparent&hide_border=true&layout=compact&langs_count=8&hide=jupyter%20notebook" alt="Top Languages" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=SheathedSharp&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SheathedSharp&theme=transparent&hide_border=true&layout=compact&langs_count=8&hide=jupyter%20notebook" alt="Top Languages" />
   </p>
-  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=hiddenSharp429&theme=transparent&hide_border=false" alt="GitHub Streak" />
+  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=SheathedSharp&theme=transparent&hide_border=false" alt="GitHub Streak" />
 </div>
 
 ### GitHub Trophies: 🏆
-![](https://github-profile-trophy.vercel.app/?username=hiddenSharp429&theme=algolia&no-frame=false&no-bg=true&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=SheathedSharp&theme=algolia&no-frame=false&no-bg=true&margin-w=4)
 
 <h4 align="center">Thanks for visiting! :innocent:</h4>
 
-⭐️ From [hiddenSharp429](https://github.com/hiddenSharp429)
+⭐️ From [SheathedSharp](https://github.com/SheathedSharp)

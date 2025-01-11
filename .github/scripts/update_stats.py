@@ -1,8 +1,6 @@
 '''
-Author: hiddenSharp429 z404878860@163.com
+Author: SheathedSharp z404878860@163.com
 Date: 2024-11-09 13:13:34
-LastEditors: Please set LastEditors
-LastEditTime: 2025-01-07 11:00:11
 '''
 import os
 import re
