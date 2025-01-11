@@ -50,7 +50,7 @@ I'm SheathedSharp! I'm a <b>Full-Stack Developer</b> :computer:, <b>Mobile App D
 <div align="center">
   <p align="center" style="display: flex; justify-content: space-between;">
     <img width="49%" src="https://github-readme-stats.vercel.app/api?username=SheathedSharp&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SheathedSharp&theme=transparent&hide_border=true&layout=compact&langs_count=8&hide=jupyter%20notebook" alt="Top Languages" />
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SheathedSharp&theme=transparent&hide_border=true&layout=compact&hide=jupyter%20notebook" alt="Top Languages" />
   </p>
   <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=SheathedSharp&theme=transparent&hide_border=false" alt="GitHub Streak" />
 </div>
