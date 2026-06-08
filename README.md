@@ -19,11 +19,11 @@ I'm SheathedSharp! looking to solve real-world problems. I'm passionate about cr
 <p>
   <a href="https://blog.csdn.net/Zchengjisihan?spm=1019.2139.3001.5343"><img src="https://img.shields.io/badge/My%20Chinese%20Blog-Click-red?style=social&logo=CSDN"></img>
   </a>
-  <img src="https://img.shields.io/badge/My%20Blog%20Views-574806-blue?style=social">
+  <img src="https://img.shields.io/badge/My%20Blog%20Views-575422-blue?style=social">
   </img>
   <img src="https://img.shields.io/badge/Posts-121-green?style=social">
   </img>
-  <img src="https://img.shields.io/badge/Followers-5264-orange?style=social">
+  <img src="https://img.shields.io/badge/Followers-5267-orange?style=social">
   </img>
 </p>
 
